@@ -1,0 +1,1 @@
+java -jar -Dspring.profiles.active=prod consulta-0.0.1-SNAPSHOT.jar

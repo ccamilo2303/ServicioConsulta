@@ -1,23 +1,4 @@
-server:
-    port: 8080
-
+#spring
 spring:
-  application:
-    name: ServicioConsulta
-  datasource:
-    jdbc-url: jdbc:sqlserver://bikerfinder.mssql.somee.com;databaseName=bikerfinder
-    username: ccamilo2303_SQLLogin_1
-    password: xz2xkybsbl
-    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    hikari:
-      maximum-pool-size: 20
-      connection-timeout: 7000
-keycloak:
-  realm: ProduccionServicio
-  auth-server-url: http://localhost:8448/auth
-  ssl-required: external
-  resource: servicio-consulta
-  credentials:
-    secret: d88c7e5f-8bdd-46c0-b08b-06f91422f942
-  use-resource-role-mappings: true
-  bearer-only: true
+  main.banner-mode: off
+  profiles.active: dev
